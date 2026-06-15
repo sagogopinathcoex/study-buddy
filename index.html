@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Study Buddy</h1>
+      <p>Your notebook-powered study companion</p>
+    </header>
+
+    <!-- Mode tabs -->
+    <div class="tabs">
+      <button class="tab active" data-mode="explain">Explain</button>
+      <button class="tab" data-mode="quiz">Quiz me</button>
+      <button class="tab" data-mode="flashcards">Flashcards</button>
+    </div>
+
+    <!-- Chat area -->
+    <div class="chat-wrap">
+      <div class="margin-line"></div>
+      <div class="chat" id="chat">
+        <div class="empty-state" id="emptyState">
+          <p>What are we studying today?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input bar -->
+    <div class="input-bar">
+      <textarea id="userInput" rows="1" placeholder="Ask me to explain anything..."></textarea>
+      <button id="sendBtn">Send</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
